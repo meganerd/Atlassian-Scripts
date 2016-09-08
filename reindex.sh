@@ -2,11 +2,11 @@
 
 ########################################## Settings ##########################################
 # username - Admin user on the Jira Server
-username="jason.hensler"
+username="gjohnson"
 # password - Password for user, can be left as '' and passed in at run time by call script with password argument ex: ./reindex.sh <password>
-password=""
+password="xxx.oMega132"
 # server needs to be the server name and context of Jira install, ex: http(s)://<jira_dns>:<port>/<jira_context>
-server="https://confjira01aq:8080/jira"
+server="https://jira.fglsports.com/"
 # background - [true|false] Set to true for background index or false to preform an instance locking re-index
 background=true
 # monitor - [true|false] Set to true for the script to monitor the re-index. This will cause the script to check status until it reaches 100%
