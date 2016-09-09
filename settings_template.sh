@@ -1,12 +1,19 @@
 ########################################## Settings ##########################################
 # Copy this template to $HOME/.atlassian_tools.conf then modify it to suite your environment.
 # username - Admin user on the Jira Server
-username="put_jira_username_here"
+username="serviceaccount"
 # password - Password for user, can be left blank and passed in at run time by call script with password argument eg. reindex.sh <password>
-password="put_jira_password_here"
+#password="Bl@ckiPhone7128GB"
+password="areallygoodpassword"
+# Default port, probably either 80 or 443 depending on if you are using the defaults.
+port=443
 # server needs to be the server name and context of Jira install, ex: http(s)://<jira_dns>:<port>/<jira_context>
 # jira context is optional, your installation may not require it.
-server="https://fqdn:NN/jira"
+server="https://jira.companydomain.tld:443/jira"
+# Bamboo FQDN
+bamboo_fqdn=bamboo.companydomain.tld
+# Stash FQDN
+stash_fqdn=stash.companydomain.tld
 # background - [true|false] Set to true for background index or false to preform an instance locking re-index
 background=true
 # monitor - [true|false] Set to true for the script to monitor the re-index. This will cause the script to check status until it reaches 100%
@@ -17,6 +24,7 @@ debug=false
 print_date=true
 # date_format - Standard date command format to be displayed if print_date=true
 date_format="+%Y-%m-%d_%T"
+#
 # cookie_dir - Directory to store the .cookies.txt (cookie jar) for curl.
 cookie_dir=$HOME
 #output-dir Where output files are placed

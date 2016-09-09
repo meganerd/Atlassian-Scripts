@@ -1,6 +1,6 @@
 #!/bin/bash
 # Originally based on the snippet found at https://answers.atlassian.com/questions/216009/how-to-get-repository-list-for-a-stash-project
-. ~/.atlassian.config
+. prereqs.sh
 curl -k -s -H "Content-Type: application/json" -X GET -u $username:$password "https://$stash_fqdn:$port/rest/api/1.0/projects?size=100&limit=100" | jq -r ".values[].link.url"|while read line
 do
      #echo "curl -k -s https://${STASH}/rest/api/1.0${line}/repos"
