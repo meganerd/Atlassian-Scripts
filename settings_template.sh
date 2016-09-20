@@ -3,13 +3,12 @@
 # username - Admin user on the Jira Server
 username="serviceaccount"
 # password - Password for user, can be left blank and passed in at run time by call script with password argument eg. reindex.sh <password>
-#password="Bl@ckiPhone7128GB"
 password="areallygoodpassword"
 # Default port, probably either 80 or 443 depending on if you are using the defaults.
 port=443
-# server needs to be the server name and context of Jira install, ex: http(s)://<jira_dns>:<port>/<jira_context>
+# jira_fqdn needs to be the server name and context of Jira install, ex: http(s)://<jira_dns>:<port>/<jira_context>
 # jira context is optional, your installation may not require it.
-server="https://jira.companydomain.tld:443/jira"
+jira_fqdn="https://jira.companydomain.tld:443/jira"
 # Bamboo FQDN
 bamboo_fqdn=bamboo.companydomain.tld
 # Stash FQDN
